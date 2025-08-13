@@ -8,7 +8,8 @@ console.log(words);
 for (let word of words) {
     const firstLetter = word[0].toUpperCase();
     const rest = word.slice(1);
-    capitalizedWords.push(firstLetter + rest);
+    const fullWord = firstLetter.concat(rest);
+    capitalizedWords.push(fullWord);
 
 }
 console.log(capitalizedWords.join(' '));
